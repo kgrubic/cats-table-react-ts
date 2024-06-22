@@ -10,7 +10,8 @@ on:
     branches: ["main"]
 
 jobs:
-  cats-build:
+  #Build job
+  build:
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,6 +20,34 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: cats-table-steps
+      - name: Checkout Code
         uses: actions/checkout@v4
-      - run: echo "Hellow World"
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Install Depednedncies
+        run: npm install
+      - name: Build Project
+        run: npm run build
+      - name: Upload artifact to ensable deployment
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
+  #Deploy job
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.CATS_TABLE_KGRUBIC }}
+          publish_dir: ./dist
