@@ -7,7 +7,7 @@ export const DogTable = () => {
   const cats = FetchHook("https://catfact.ninja/breeds");
   const { data } = cats;
   return (
-    <div>
+    <div className="flex place-content-center">
       <Table
         rows={data as TypeDog[]}
         headers={catsHeaders}
