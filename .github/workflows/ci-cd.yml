@@ -46,8 +46,6 @@ jobs:
         with:
           name: production-files
           path: ./build
-      - name: Deploy Project
-        run: npm run deploy
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
