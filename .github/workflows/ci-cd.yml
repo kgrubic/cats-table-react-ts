@@ -20,5 +20,5 @@ jobs:
 
     steps:
       - name: cats-table-steps
-        uses: cats-table-react-ts@v1
+        uses: actions/checkout@v4
       - run: echo "Hellow World"
