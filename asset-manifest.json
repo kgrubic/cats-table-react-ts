@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cats-table-react-ts/static/css/main.151bf25f.css",
-    "main.js": "/cats-table-react-ts/static/js/main.7121fa01.js",
+    "main.css": "/cats-table-react-ts/static/css/main.d47c529e.css",
+    "main.js": "/cats-table-react-ts/static/js/main.bf4bc5e1.js",
     "static/js/453.88333000.chunk.js": "/cats-table-react-ts/static/js/453.88333000.chunk.js",
     "index.html": "/cats-table-react-ts/index.html",
-    "main.151bf25f.css.map": "/cats-table-react-ts/static/css/main.151bf25f.css.map",
-    "main.7121fa01.js.map": "/cats-table-react-ts/static/js/main.7121fa01.js.map",
+    "main.d47c529e.css.map": "/cats-table-react-ts/static/css/main.d47c529e.css.map",
+    "main.bf4bc5e1.js.map": "/cats-table-react-ts/static/js/main.bf4bc5e1.js.map",
     "453.88333000.chunk.js.map": "/cats-table-react-ts/static/js/453.88333000.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.151bf25f.css",
-    "static/js/main.7121fa01.js"
+    "static/css/main.d47c529e.css",
+    "static/js/main.bf4bc5e1.js"
   ]
 }
