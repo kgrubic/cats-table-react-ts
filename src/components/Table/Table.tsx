@@ -9,9 +9,9 @@ interface TableProps {
 export const Table = ({ rows, headers, Component }: TableProps) => {
   const renderHeaders = () => headers?.map((h) => <th>{h}</th>);
   return (
-    <table>
+    <table className="border-collapse border border-slate-400">
       <thead>
-        <tr>{renderHeaders()}</tr>
+        <tr className="border border-slate-300 ...">{renderHeaders()}</tr>
       </thead>
       {rows?.map((r) => (
         <Component data={r} />
