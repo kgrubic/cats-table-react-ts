@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cats-table-react-ts/static/css/main.66d97f33.css",
+    "main.js": "/cats-table-react-ts/static/js/main.b4ff807c.js",
+    "static/js/453.88333000.chunk.js": "/cats-table-react-ts/static/js/453.88333000.chunk.js",
+    "index.html": "/cats-table-react-ts/index.html",
+    "main.66d97f33.css.map": "/cats-table-react-ts/static/css/main.66d97f33.css.map",
+    "main.b4ff807c.js.map": "/cats-table-react-ts/static/js/main.b4ff807c.js.map",
+    "453.88333000.chunk.js.map": "/cats-table-react-ts/static/js/453.88333000.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66d97f33.css",
+    "static/js/main.b4ff807c.js"
+  ]
+}
