@@ -5,13 +5,12 @@ name: Cats Table CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   cats-build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,5 +19,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: cats-table-steps
-    - run: echo "Hellow World"
+      - name: cats-table-steps
+        uses: actions/setup-cats-table@v3
+      - run: echo "Hellow World"
