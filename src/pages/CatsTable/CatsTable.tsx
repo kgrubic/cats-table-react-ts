@@ -5,7 +5,7 @@ import { FetchHook } from "../../hooks/fetchHook";
 export const DogTable = () => {
   const catsHeaders = ["Breed", "Country", "Origin", "Coat", "Pattern"];
   const cats = FetchHook("https://catfact.ninja/breeds");
-  const { data, error, loading } = cats;
+  const { data } = cats;
   return (
     <div>
       <Table
