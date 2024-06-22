@@ -12,11 +12,21 @@ export interface TypeDog {
 export const CatsRow = ({ data }: RowProp) => {
   return (
     <tr className="border border-slate-300 ...">
-      <td className="border border-slate-300 ...">{data?.breed}</td>
-      <td className="border border-slate-300 ...">{data?.country}</td>
-      <td className="border border-slate-300 ...">{data?.origin}</td>
-      <td className="border border-slate-300 ...">{data?.coat}</td>
-      <td className="border border-slate-300 ...">{data?.pattern}</td>
+      <td className="border border-spacing-x-1.5 border-slate-300 ...">
+        {data?.breed}
+      </td>
+      <td className="border border-spacing-x-1.5 border-slate-300 ...">
+        {data?.country}
+      </td>
+      <td className="border border-spacing-x-1.5 border-slate-300 ...">
+        {data?.origin}
+      </td>
+      <td className="border border-spacing-x-1.5 border-slate-300 ...">
+        {data?.coat}
+      </td>
+      <td className="border border-spacing-x-1.5 border-slate-300 ...">
+        {data?.pattern}
+      </td>
     </tr>
   );
 };
